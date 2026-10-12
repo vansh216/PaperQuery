@@ -1,0 +1,61 @@
+### --- Environment & secrets ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+### --- Python (backend) ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv/
+*.egg-info/
+.eggs/
+build/
+dist/
+pip-wheel-metadata/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Jupyter (if used for experiments)
+.ipynb_checkpoints/
+
+### --- Node / React / Vite (frontend) ---
+node_modules/
+dist/
+dist-ssr/
+.vite/
+*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+### --- Project data (uploads, vector storage, registry) ---
+backend/data/uploads/*
+!backend/data/uploads/.gitkeep
+backend/data/documents.json
+qdrant_storage/
+
+### --- Editor / OS ---
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+### --- Misc ---
+*.log
+.cache/
